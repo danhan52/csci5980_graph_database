@@ -1,0 +1,16 @@
+version: '3'
+services:
+  neo4j: 
+    image: 'neo4j'
+    volumes: 
+      - '~/neo4j/data:/data'
+    ports:
+      - '7473:7473'
+      - '7474:7474'
+      - '7687:7687'
+    ulimits:
+      nofile: 64000
+    env_file: 
+      - ./default_neo4j.env
+      - ./overrides_neo4j.env
+
