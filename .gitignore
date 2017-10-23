@@ -99,3 +99,8 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# other files
+graphpass.txt
+dboxkey.txt
+data/*
